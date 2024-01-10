@@ -5,6 +5,8 @@ Assignment project
 -> Run the following docker command to create a database in MySQL <br>
 -> ``` docker run -d -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=asset_management --name mysqldb -p 3306:3306 mysql:8.0 ``` <br>
 -> After succesfully running the docker container, build/run the project <br>
+Postman collection link:<br>
+``` https://api.postman.com/collections/32222541-d1f18cfd-04cb-4154-8a2a-2d1e33bb398c?access_key=PMAT-01HKS9HWQ1PPHV2KB9TEAABD7H ```
 
 For Categories:<br>
 Get all categories:<br>
