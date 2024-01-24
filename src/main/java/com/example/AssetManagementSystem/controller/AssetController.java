@@ -21,8 +21,12 @@ public class AssetController {
     private AssetService assetService;
 
     @GetMapping
-    public List<Asset> getAllAssets() {
-        return assetService.getAllAssets();
+    public ResponseEntity<List<Asset>> getAllAssets(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size
+    ) {
+        List<Asset> assets = assetService.getAllAssets(page, size);
+        return ResponseEntity.ok(assets);
     }
 
     @GetMapping("/id/{assetId}")
